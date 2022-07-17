@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root {
+  --bg-color: #363d43;
+  --font-color: #c2ccd5;
+  --accent-green: #a5d348;
+  --accent-purple: #a286f9;
+  --accent-pink: #e04076;
+  --accent-orange: #e89239;
+  --accent-cyan: #63cad5;
+  --mono-font: Fira Code, monospace;
+}
+
 html,
 body {
   padding: 0;
