@@ -1,23 +1,30 @@
 import { createGlobalStyle } from "styled-components";
 
 export const darkTheme = {
-    background: "#363d43",
-    fontColor: "#c2ccd5",
-    accentGreen: "#a5d348",
-    accentPurple: "#a286f9",
-    accentPink: "#e04076",
-    accentOrange: "#e89239",
-    accentCyan: "#63cad5",
-}
+    colors: {
+        background: "#2d2d2d",
+        fontColor: "#dfdfdf",
+        accentGreen: "#a5d348",
+        accentPurple: "#a286f9",
+        accentPink: "#e04076",
+        accentOrange: "#e68600",
+        accentCyan: "#63cad5",
+    },
+    fonts: {
+        mono: "'Fira Code', monospace",
+        sans: "Roboto",
+    },
+};
 
 export const GlobalStyles = createGlobalStyle`
 html,
 body {
+    scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: ${({theme}) => theme.background}
+    background-color: ${({ theme }) => theme.colors.background}
 }
 
 a {
@@ -28,4 +35,9 @@ a {
 * {
   box-sizing: border-box;
 }
-`
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+`;

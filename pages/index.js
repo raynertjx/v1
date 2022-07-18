@@ -1,13 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import Layout from "../layout/layout";
+import Hero from "../components/Hero/Hero";
+import Header from "../components/Header/Header";
 
 export default function Home() {
     return (
         <>
-            <Navbar />
-            <Hero />
+            <Header />
+            <Layout>
+                <Hero />
+            </Layout>
         </>
     );
 }
