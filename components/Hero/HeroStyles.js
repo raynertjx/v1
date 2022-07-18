@@ -5,7 +5,7 @@ export const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: 70vh;
+    min-height: 100vh;
     color: ${({ theme }) => theme.colors.fontColor}
 `;
 
