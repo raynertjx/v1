@@ -1,12 +1,14 @@
 import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
-import { Section, Header, Info, List } from "./AboutStyles";
+import { Info, List } from "./AboutStyles";
+import { Heading } from "../UI/Heading";
+import { Section } from "../UI/Section";
 import { AboutParagraphs, AboutSkills } from "../../lib/constants";
 
 const About = () => {
     return (
         <Section>
-            <Header>About Me</Header>
+            <Heading>About Me</Heading>
             <Info>
                 {AboutParagraphs.map((para) => (
                     <p>{para}</p>

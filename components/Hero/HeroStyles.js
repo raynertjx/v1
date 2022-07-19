@@ -16,6 +16,7 @@ export const IntroHeader = styled.h3`
 `;
 
 export const NameHeader = styled.h2`
+    color: ${({ theme }) => theme.colors.white};
     font-size: 6.5rem;
     padding-bottom: 1rem;
     span {

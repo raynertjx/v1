@@ -1,10 +1,14 @@
-
-import React from 'react'
+import React from "react";
+import { Heading } from "../UI/Heading";
+import { Section } from "../UI/Section";
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+    return (
+        <Section>
+            <Heading>Projects</Heading>
+            <div></div>
+        </Section>
+    );
+};
 
-export default Projects
+export default Projects;

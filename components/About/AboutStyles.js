@@ -1,32 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-`;
-
-export const Header = styled.h1`
-    position: relative;
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    font-family: ${({ theme }) => theme.fonts.mono};
-    color: ${({ theme }) => theme.colors.accentOrange};
-
-    &:after {
-        /* background: ${({ theme }) => theme.colors.lightgrey}; */
-        background: #595959;
-        content: "";
-        display: block;
-        width: 600px;
-        height: 1px;
-        left: 110%;
-        top: 50%;
-        position: absolute;
-    }
-`;
-
 export const Info = styled.div`
     p {
         color: ${({ theme }) => theme.colors.lightgrey};

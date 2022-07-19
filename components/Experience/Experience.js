@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Heading } from "../UI/Heading";
+import { Section } from "../UI/Section";
 
 const Experience = () => {
-  return (
-    <div>Experience</div>
-  )
-}
+    return (
+        <Section>
+            <Heading>Experience</Heading>
+        </Section>
+    );
+};
 
-export default Experience
+export default Experience;
