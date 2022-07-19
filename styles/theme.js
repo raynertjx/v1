@@ -24,7 +24,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: ${({ theme }) => theme.colors.background}
+    /* font-family: Inter, sans-serif; */
+    background-color: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.fontColor};
+
 }
 
 a {
