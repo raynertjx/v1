@@ -3,12 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const darkTheme = {
     colors: {
         background: "#2d2d2d",
-        fontColor: "#dfdfdf",
-        accentGreen: "#a5d348",
-        accentPurple: "#a286f9",
-        accentPink: "#e04076",
+        white: "#dfdfdf",
+        lightgrey: "#c8c8c8",
         accentOrange: "#e68600",
-        accentCyan: "#63cad5",
+        // accentGreen: "#a5d348",
+        // accentPurple: "#a286f9",
+        // accentPink: "#e04076",
+        // accentCyan: "#63cad5",
     },
     fonts: {
         mono: "'Fira Code', monospace",
@@ -26,7 +27,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     /* font-family: Inter, sans-serif; */
     background-color: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.fontColor};
+    color: ${({ theme }) => theme.colors.white};
 
 }
 
@@ -39,7 +40,7 @@ a {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0;
     margin: 0;
 }
