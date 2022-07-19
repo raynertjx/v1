@@ -14,7 +14,6 @@ export const darkTheme = {
     },
     fonts: {
         mono: "'Fira Code', monospace",
-        sans: "Roboto",
     },
 };
 

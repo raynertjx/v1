@@ -5,6 +5,7 @@ export const Info = styled.div`
         color: ${({ theme }) => theme.colors.lightgrey};
         font-size: 1.3rem;
         padding: 1rem 0;
+        font-family: ${({theme})=> theme.fonts.sans}
     }
 `;
 
