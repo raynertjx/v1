@@ -11,12 +11,12 @@ const About = () => {
             <Heading>About Me</Heading>
             <Info>
                 {AboutParagraphs.map((para) => (
-                    <p>{para}</p>
+                    <p key={para.id}>{para.text}</p>
                 ))}
             </Info>
             <List>
                 {AboutSkills.map((skill) => (
-                    <li><AiOutlineCaretRight />{skill}</li>
+                    <li key={skill.id}><AiOutlineCaretRight />{skill.title}</li>
                 ))}
             </List>
         </Section>
