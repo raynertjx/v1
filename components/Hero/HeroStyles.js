@@ -6,7 +6,6 @@ export const Section = styled.section`
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    color: ${({ theme }) => theme.colors.fontColor}
 `;
 
 export const IntroHeader = styled.h3`
@@ -17,7 +16,7 @@ export const IntroHeader = styled.h3`
 `;
 
 export const NameHeader = styled.h2`
-    font-size: 6rem;
+    font-size: 7rem;
     padding-bottom: 1rem;
 `;
 
