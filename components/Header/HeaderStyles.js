@@ -4,12 +4,15 @@ export const Container = styled.header`
     width: 100%;
     position: fixed;
     display: flex;
+    height: 60px;
+    top: ${props => props.visible ? '0' : '-60px'};
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem 0rem 5rem;
-    background-color: ${({ theme }) => theme.colors.background};
+    padding: 1rem 5rem 1rem 5rem;
     color: ${({ theme }) => theme.colors.fontColor};
     font-family: ${({ theme }) => theme.fonts.mono};
+
+    transition: top 0.6s;
 
     a {
         font-size: 1.1rem;
@@ -26,10 +29,10 @@ export const NavItem = styled.li`
     text-decoration: none;
     position: relative;
     font-size: 1.1rem;
+    transition: color 175ms linear;
 
     &:hover {
         color: ${({ theme }) => theme.colors.accentOrange};
-        transition: transform 300ms linear;
     }
 
     &:after {
@@ -43,7 +46,7 @@ export const NavItem = styled.li`
 
         transform: scaleX(0);
         transform-origin: right;
-        transition: transform 300ms ease-in;
+        transition: transform 175ms ease-in;
     }
 
     &:hover:after {
