@@ -31,7 +31,14 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en-GB">
                 <Head>
-                  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"></link>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+                        rel="stylesheet"
+                    ></link>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+                        rel="stylesheet"
+                    ></link>
                 </Head>
                 <body>
                     <Main />
