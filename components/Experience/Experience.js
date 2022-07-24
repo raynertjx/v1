@@ -1,37 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { Heading } from "../UI/Heading";
 import { Section } from "../UI/Section";
-import { TabList, ContentDiv } from "./ExperienceStyles";
+import { TabList, TabItem, TabContent, Tabs } from "./ExperienceStyles";
 import { Jobs } from "../../lib/constants";
 
 const Experience = () => {
-    const [selectedBtnId, setSelectedBtnId] = useState("m1");
-    const [selectedJob, setSelectedJob] = useState();
-    useEffect(() => {
-        const job = Jobs.find((item) => item.id === selectedBtnId);
-        setSelectedJob(job);
-    }, [selectedBtnId]);
-
-    const buttonClickHandler = (e) => {
-        setSelectedBtnId(e.target.id);
-    };
+    const [selectedBtnId, setSelectedBtnId] = useState(0);
 
     return (
         <Section>
             <Heading>Experience</Heading>
-            <div>
+            <Tabs>
                 <TabList>
                     {Jobs.map((item) => (
-                        <button onClick={buttonClickHandler} key={item.id} id={item.id}>
+                        <TabItem
+                            active={item.id === selectedBtnId}
+                            onClick={() => setSelectedBtnId(item.id)}
+                            key={item.id}
+                            id={item.id}
+                        >
                             {item.button_title}
-                        </button>
+                        </TabItem>
                     ))}
                 </TabList>
-                <ContentDiv>
-                        {/* <h3>{selectedJob.job_title}</h3>
-                        <p>{selectedJob.job_date}</p> */}
-                </ContentDiv>
-            </div>
+                <TabContent>
+                    <h3>{Jobs[selectedBtnId].job_title}</h3>
+                    <h4>{Jobs[selectedBtnId].job_date}</h4>
+                    <ul>
+                        {Jobs[selectedBtnId].job_content.map((item) => (
+                            <li>{item}</li>
+                        ))}
+                    </ul>
+                </TabContent>
+            </Tabs>
         </Section>
     );
 };
