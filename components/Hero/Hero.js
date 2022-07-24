@@ -1,9 +1,9 @@
-import { HeroDesc1, HeroDesc2 } from "../../lib/constants";
-import { Section, IntroHeader, NameHeader, Intro } from "./HeroStyles";
+import { HeroDesc1 } from "../../lib/constants";
+import { HeroSection, IntroHeader, NameHeader, Intro } from "./HeroStyles";
 
 const Hero = () => {
     return (
-        <Section>
+        <HeroSection>
             <IntroHeader>Hi, my name is</IntroHeader>
             <NameHeader>
                 Rayner Toh<span>.</span>
@@ -11,7 +11,7 @@ const Hero = () => {
             <Intro>
                 <p>{HeroDesc1}</p>
             </Intro>
-        </Section>
+        </HeroSection>
     );
 };
 

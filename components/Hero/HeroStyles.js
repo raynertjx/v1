@@ -1,10 +1,7 @@
 import styled from "styled-components";
+import { Section } from "../UI/Section";
 
-export const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+export const HeroSection = styled(Section)`
     min-height: 100vh;
 `;
 
