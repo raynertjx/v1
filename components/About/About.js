@@ -1,9 +1,11 @@
 import React from "react";
-import { AiOutlineCaretRight } from "react-icons/ai";
+import { IconContext } from "react-icons/lib";
 import { Info, List } from "./AboutStyles";
 import { Heading } from "../UI/Heading";
 import { Section } from "../UI/Section";
 import { AboutParagraphs, AboutSkills } from "../../lib/constants";
+import { TbCaretRight } from "react-icons/tb";
+import { darkTheme } from "../../styles/theme";
 
 const About = () => {
     return (
@@ -15,9 +17,11 @@ const About = () => {
                 ))}
             </Info>
             <List>
-                {AboutSkills.map((skill) => (
-                    <li key={skill.id}><AiOutlineCaretRight />{skill.title}</li>
-                ))}
+                <IconContext.Provider value={{color: darkTheme.colors.accentOrange}}>
+                    {AboutSkills.map((skill) => (
+                        <li key={skill.id}><TbCaretRight />{skill.title}</li>
+                    ))}
+                </IconContext.Provider>
             </List>
         </Section>
     );

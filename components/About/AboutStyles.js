@@ -13,7 +13,7 @@ export const List = styled.ul`
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 2rem;
+    gap: 0.5rem 7rem;
     font-size: 1.3rem;
     font-family: ${({ theme }) => theme.fonts.mono};
     padding: 1rem 0;
@@ -21,6 +21,7 @@ export const List = styled.ul`
     li {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 `;
+
