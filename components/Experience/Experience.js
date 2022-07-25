@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { IconContext } from "react-icons/lib";
 import { Heading } from "../UI/Heading";
 import { Section } from "../UI/Section";
 import { TabList, TabItem, TabContent, Tabs } from "./ExperienceStyles";
 import { Jobs } from "../../lib/constants";
+import { TbCaretRight } from "react-icons/tb";
+import { darkTheme } from "../../styles/theme";
 
 const Experience = () => {
     const [selectedBtnId, setSelectedBtnId] = useState(0);
+    const [fadeIn, setFadeIn] = useState(false);
 
     return (
         <Section>
@@ -15,22 +19,31 @@ const Experience = () => {
                     {Jobs.map((item) => (
                         <TabItem
                             active={item.id === selectedBtnId}
-                            onClick={() => setSelectedBtnId(item.id)}
+                            onClick={() => {
+                                setSelectedBtnId(item.id);
+                                setFadeIn(true);
+                            }}
                             key={item.id}
                             id={item.id}
                         >
-                            {item.button_title}
+                            {item.place}
                         </TabItem>
                     ))}
                 </TabList>
-                <TabContent>
-                    <h3>{Jobs[selectedBtnId].job_title}</h3>
-                    <h4>{Jobs[selectedBtnId].job_date}</h4>
-                    <ul>
-                        {Jobs[selectedBtnId].job_content.map((item) => (
-                            <li>{item}</li>
-                        ))}
-                    </ul>
+                <TabContent
+                    fade={fadeIn}
+                    onAnimationEnd={() => setFadeIn(false)}
+                    icon={<TbCaretRight/>}
+                >
+                    <h3>{Jobs[selectedBtnId].role} <span>@ {Jobs[selectedBtnId].place}</span></h3>
+                    <h5>{Jobs[selectedBtnId].date}</h5>
+                    <IconContext.Provider value={{color: darkTheme.colors.accentOrange}}>
+                        <ul>
+                            {Jobs[selectedBtnId].content.map((item) => (
+                                <li>{item}</li>
+                            ))}
+                        </ul>
+                    </IconContext.Provider>
                 </TabContent>
             </Tabs>
         </Section>
