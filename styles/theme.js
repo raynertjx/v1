@@ -7,10 +7,6 @@ export const darkTheme = {
         lightgrey: "#c8c8c8",
         darkgrey: "#595959",
         accentOrange: "#e68600",
-        // accentGreen: "#a5d348",
-        // accentPurple: "#a286f9",
-        // accentPink: "#e04076",
-        // accentCyan: "#63cad5",
     },
     fonts: {
         mono: "'Fira Code', monospace",
@@ -27,7 +23,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.lightgrey};
-
 }
 
 a {
