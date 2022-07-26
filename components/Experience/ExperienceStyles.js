@@ -2,7 +2,7 @@ import styled, { keyframes, css } from "styled-components";
 
 export const Tabs = styled.div`
     display: flex;
-    padding: 2girem 0;
+    padding: 1em 0;
     gap: 2rem;
     height: 20vh;
 `;
@@ -54,6 +54,7 @@ const fadein = keyframes`
     }`;
 
 export const TabContent = styled.div`
+    max-width: 60ch;
     display: flex;
     flex-direction: column;
     gap: 1rem;
