@@ -15,5 +15,9 @@ export const Heading = styled.h1`
         left: 110%;
         top: 50%;
         position: absolute;
+        @media (max-width: 1080px) {
+            width: 200px;
+        }
     }
+
 `;
