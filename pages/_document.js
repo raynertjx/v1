@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en-GB">
                 <Head>
+                    <link rel="shortcut icon" href="/r-icon.ico" />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
                         rel="stylesheet"
