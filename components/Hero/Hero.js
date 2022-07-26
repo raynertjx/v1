@@ -3,7 +3,7 @@ import { HeroSection, IntroHeader, NameHeader, Intro } from "./HeroStyles";
 
 const Hero = () => {
     return (
-        <HeroSection>
+        <HeroSection id="hero">
             <IntroHeader>Hi, my name is</IntroHeader>
             <NameHeader>
                 Rayner Toh<span>.</span>
