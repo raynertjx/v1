@@ -1,12 +1,24 @@
 import React from "react";
-import { Heading } from "../UI/Heading";
-import { Section } from "../UI/Section";
+import {
+    ContactPara,
+    ContactBtn,
+    ContactSection,
+    ContactHeading,
+} from "./ContactStyles";
 
 const Contact = () => {
     return (
-        <Section>
-            <Heading>Contact</Heading>
-        </Section>
+        <ContactSection id="contact">
+            <ContactHeading>Contact Me</ContactHeading>
+            <ContactPara>
+                I'm always open to new opportunities, so my inbox is always
+                open. Furthermore, if you have a question or just want to say
+                hello, I'll do my best to get back to you!{" "}
+            </ContactPara>
+            <ContactBtn href="mailto:rayner742@gmail.com" target="_blank">
+                Say Hello
+            </ContactBtn>
+        </ContactSection>
     );
 };
 

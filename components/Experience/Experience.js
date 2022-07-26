@@ -12,7 +12,7 @@ const Experience = () => {
     const [fadeIn, setFadeIn] = useState(false);
 
     return (
-        <Section>
+        <Section id="experience">
             <Heading>Experience</Heading>
             <Tabs>
                 <TabList>
