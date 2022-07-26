@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, NavItem } from "./HeaderStyles";
+import Link from "next/link";
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -22,16 +23,16 @@ const Header = () => {
             <nav>
                 <ul>
                     <NavItem>
-                        <a href="">About</a>
+                        <Link href="#about">About</Link>
                     </NavItem>
                     <NavItem>
-                        <a href="">Experience</a>
+                        <Link href="#experience">Experience</Link>
                     </NavItem>
                     <NavItem>
-                        <a href="">Projects</a>
+                        <Link href="#projects">Projects</Link>
                     </NavItem>
                     <NavItem>
-                        <a href="">Contact</a>
+                        <Link href="#contact">Contact</Link>
                     </NavItem>
                 </ul>
             </nav>

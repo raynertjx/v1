@@ -14,21 +14,18 @@ export const Container = styled.header`
 
     transition: top 0.6s;
 
-    a {
-        font-size: 1.1rem;
-    }
-
     ul {
         list-style-type: none;
         display: flex;
         gap: 3rem;
     }
+
+
 `;
 
 export const NavItem = styled.li`
     text-decoration: none;
     position: relative;
-    font-size: 1.1rem;
     transition: color 175ms linear;
 
     &:hover {
