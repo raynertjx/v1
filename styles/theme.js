@@ -17,13 +17,21 @@ export const GlobalStyles = createGlobalStyle`
 html,
 body {
     scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-   font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    padding: 0;
+    margin: 0;
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.lightgrey};
-}
+
+    
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+        font-size: 12px;
+    }
+  }
 
 a {
   color: inherit;
