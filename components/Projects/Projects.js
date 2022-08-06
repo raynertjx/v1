@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Profiler } from "react";
 import { Heading } from "../UI/Heading";
 import Image from "next/image";
 import {
@@ -18,7 +18,10 @@ const Projects = () => {
             <ProjectList>
                 {projects.map((proj) => (
                     <ProjectItem>
-                        <ProjectContent>
+                        <ProjectImage>
+                            <Image src={proj.img} />
+                        </ProjectImage>
+                        <ProjectContent img={proj.img}>
                             <h2>{proj.title}</h2>
                             <p>{proj.desc}</p>
                             <ul>
@@ -27,13 +30,14 @@ const Projects = () => {
                                 ))}
                             </ul>
                             <div>
-                                <a href={proj.github_link} target="_blank"><FiGithub /></a>
-                                <a href={proj.deployment_link} target="_blank"><FiExternalLink/></a>
+                                <a href={proj.github_link} target="_blank">
+                                    <FiGithub />
+                                </a>
+                                <a href={proj.deployment_link} target="_blank">
+                                    <FiExternalLink />
+                                </a>
                             </div>
                         </ProjectContent>
-                        <ProjectImage>
-                            <Image src={proj.img} />
-                        </ProjectImage>
                     </ProjectItem>
                 ))}
             </ProjectList>

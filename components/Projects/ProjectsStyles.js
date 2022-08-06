@@ -1,62 +1,82 @@
-import { Section } from "../UI/Section";
 import styled from "styled-components";
 
-export const ProjectSection = styled(Section)`
-    margin: 0 auto;
-` 
-export const ProjectList = styled.ul``;
+export const ProjectSection = styled.section`
+    max-width: 1000px;    
+`;
+export const ProjectList = styled.ul`
+    list-style-type: none;
+`;
 export const ProjectItem = styled.li`
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    border-radius: 5px;
-    ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
+    @media (max-width: 768px) {
+        padding: 1em;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+        background: #414141;
+        border-radius: 5px;
+    }
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
     }
 `;
 
 export const ProjectImage = styled.div`
     grid-area: 1 / 1 / -1 / 8;
     z-index: 1;
+    span {
+        border-radius: 5px;
+    }
 `;
 export const ProjectContent = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5em;
     grid-area: 1 / 7 / -1 / -1;
-    text-align: right;
+    padding: 1em;
     align-self: center;
+
     h2 {
-        color: ${(props) => props.theme.colors.white}
+        color: ${(props) => props.theme.colors.white};
     }
-    p {
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
-        padding: 1.5rem;
-        background: #414141;
-        position: relative;
-        z-index: 2;
+
+    @media (min-width: 768px) {
+        text-align: right;
+        p {
+            z-index: 2;
+            grid-area: 1 / 7 / -1 / -1;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+            background: #414141;
+            border-radius: 5px;
+            padding: 1.25em;
+        }
+
+        ul,
+        div {
+            justify-content: flex-end;
+        }
     }
+
     ul {
+        list-style-type: none;
+        display: flex;
         color: ${(props) => props.theme.colors.accentOrange};
         font-family: ${(props) => props.theme.fonts.mono};
         font-size: 0.75rem;
-        gap: 1rem;
+        gap: 1em;
     }
 
     div {
         display: flex;
         gap: 1rem;
-        justify-content: flex-end;
     }
     svg {
         width: 20px;
         height: 20px;
-        cursor: pointer;   
+        cursor: pointer;
         transition: 300ms ease-out;
-        &:hover {
-            color: ${(props) => props.theme.colors.accentOrange}
-        } 
-        
-}
+        :hover {
+            color: ${(props) => props.theme.colors.accentOrange};
+        }
+    }
 `;
