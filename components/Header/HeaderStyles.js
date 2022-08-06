@@ -5,7 +5,7 @@ export const Container = styled.header`
     position: fixed;
     display: flex;
     height: 60px;
-    top: ${props => props.visible ? '0' : '-60px'};
+    top: ${(props) => (props.visible ? "0" : "-60px")};
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem 1rem 5rem;
@@ -19,8 +19,6 @@ export const Container = styled.header`
         display: flex;
         gap: 3rem;
     }
-
-
 `;
 
 export const NavItem = styled.li`
