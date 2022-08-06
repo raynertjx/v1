@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons/lib";
 import { Heading } from "../UI/Heading";
-import { Section } from "../UI/Section";
+// import { Section } from "../UI/Section";
+import { ExperienceSection } from "./ExperienceStyles";
 import { TabList, TabItem, TabContent, Tabs } from "./ExperienceStyles";
 import { Jobs } from "../../lib/constants";
 import { TbCaretRight } from "react-icons/tb";
@@ -12,7 +13,7 @@ const Experience = () => {
     const [fadeIn, setFadeIn] = useState(false);
 
     return (
-        <Section id="experience">
+        <ExperienceSection id="experience">
             <Heading>Experience</Heading>
             <Tabs>
                 <TabList>
@@ -46,7 +47,7 @@ const Experience = () => {
                     </IconContext.Provider>
                 </TabContent>
             </Tabs>
-        </Section>
+        </ExperienceSection>
     );
 };
 

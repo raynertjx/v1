@@ -2,14 +2,14 @@ import React from "react";
 import { IconContext } from "react-icons/lib";
 import { Info, List } from "./AboutStyles";
 import { Heading } from "../UI/Heading";
-import { Section } from "../UI/Section";
+import { AboutSection } from "./AboutStyles";
 import { AboutParagraphs, AboutSkills } from "../../lib/constants";
 import { TbCaretRight } from "react-icons/tb";
 import { darkTheme } from "../../styles/theme";
 
 const About = () => {
     return (
-        <Section id="about">
+        <AboutSection id="about">
             <Heading>About Me</Heading>
             <Info>
                 {AboutParagraphs.map((para) => (
@@ -23,7 +23,7 @@ const About = () => {
                     ))}
                 </IconContext.Provider>
             </List>
-        </Section>
+        </AboutSection>
     );
 };
 

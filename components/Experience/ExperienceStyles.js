@@ -1,5 +1,9 @@
 import styled, { keyframes, css } from "styled-components";
 
+export const ExperienceSection = styled.section`
+    max-width: 900px;
+`
+
 export const Tabs = styled.div`
     display: flex;
     padding: 1em 0;
@@ -16,7 +20,7 @@ export const TabItem = styled.li`
     text-align: left;
     white-space: nowrap;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     list-style-type: none;
     font-family: ${(props) => props.theme.fonts.mono};
     padding: 1rem 2rem;
@@ -54,7 +58,7 @@ const fadein = keyframes`
     }`;
 
 export const TabContent = styled.div`
-    max-width: 60ch;
+    /* max-width: 60ch; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
