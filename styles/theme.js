@@ -14,9 +14,12 @@ export const darkTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-html,
-body {
-    scroll-behavior: smooth;
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  
+    scroll-behavior: smooth;  
     padding: 0;
     margin: 0;
     font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -50,5 +53,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 section {
   padding: 100px 0;
+  margin: 0px auto;
+
 }
 `;
