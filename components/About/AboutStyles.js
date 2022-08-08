@@ -7,9 +7,9 @@ export const AboutSection = styled.section`
 export const Info = styled.div`
     p {
         color: ${({ theme }) => theme.colors.lightgrey};
-        font-size: 1.2rem;
-        padding: 1rem 0;
-        max-width: 75ch;
+        font-size: 1.25rem;
+        padding-bottom: 2em;
+        max-width: 70ch;
     }
 `;
 
@@ -20,7 +20,6 @@ export const List = styled.ul`
     gap: 0.5rem 1rem;
     font-size: 1.1rem;
     font-family: ${({ theme }) => theme.fonts.mono};
-    padding: 1rem 0;
 
     li {
         display: flex;
