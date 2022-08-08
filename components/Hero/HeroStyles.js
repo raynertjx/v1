@@ -11,12 +11,13 @@ export const HeroSection = styled.section`
 export const IntroHeader = styled.h3`
     color: ${({ theme }) => theme.colors.accentOrange};
     font-family: ${({ theme }) => theme.fonts.mono};
-    font-size: clamp(0.9rem, 5vw, 1.5rem);
+    font-size: clamp(1rem, 5vw, 2rem);
 `;
 
 export const NameHeader = styled.h2`
     color: ${({ theme }) => theme.colors.white};
-    font-size: clamp(4rem, 10vw, 7rem);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 700;
     margin-left: -0.06em;
     span {
         font-size: clamp(2rem, 8vw, 4rem);
