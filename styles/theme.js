@@ -9,21 +9,22 @@ export const darkTheme = {
         accentOrange: "#e68600",
     },
     fonts: {
-        mono: "'Fira Code', monospace",
+        // mono: "'Fira Code', monospace",
     },
 };
 
 export const GlobalStyles = createGlobalStyle`
 
 html {
-  box-sizing: border-box;
-  width: 100%;
-  
+    box-sizing: border-box;
+    width: 100%;
     scroll-behavior: smooth;  
     padding: 0;
     margin: 0;
-    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /* font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.lightgrey};
 
@@ -49,6 +50,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     padding: 0;
     margin: 0;
     line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
 section {
