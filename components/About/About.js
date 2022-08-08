@@ -10,7 +10,7 @@ import { darkTheme } from "../../styles/theme";
 const About = () => {
     return (
         <AboutSection id="about">
-            <Heading>About Me</Heading>
+            <Heading>about me.</Heading>
             <Info>
                 {AboutParagraphs.map((para) => (
                     <p key={para.id}>{para.text}</p>

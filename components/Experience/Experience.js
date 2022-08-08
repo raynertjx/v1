@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons/lib";
 import { Heading } from "../UI/Heading";
-// import { Section } from "../UI/Section";
 import { ExperienceSection } from "./ExperienceStyles";
 import { TabList, TabItem, TabContent, Tabs } from "./ExperienceStyles";
 import { Jobs } from "../../lib/constants";
@@ -14,7 +13,7 @@ const Experience = () => {
 
     return (
         <ExperienceSection id="experience">
-            <Heading>Experience</Heading>
+            <Heading>experience.</Heading>
             <Tabs>
                 <TabList>
                     {Jobs.map((item) => (
@@ -37,7 +36,7 @@ const Experience = () => {
                     icon={<TbCaretRight/>}
                 >
                     <h3>{Jobs[selectedBtnId].role} <span>@ {Jobs[selectedBtnId].place}</span></h3>
-                    <h5>{Jobs[selectedBtnId].date}</h5>
+                    <h4>{Jobs[selectedBtnId].date}</h4>
                     <IconContext.Provider value={{color: darkTheme.colors.accentOrange}}>
                         <ul>
                             {Jobs[selectedBtnId].content.map((item) => (

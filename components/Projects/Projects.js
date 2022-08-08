@@ -1,4 +1,4 @@
-import React, { Profiler } from "react";
+import React from "react";
 import { Heading } from "../UI/Heading";
 import Image from "next/image";
 import {
@@ -14,7 +14,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 const Projects = () => {
     return (
         <ProjectSection id="projects">
-            <Heading>Projects</Heading>
+            <Heading>projects.</Heading>
             <ProjectList>
                 {projects.map((proj) => (
                     <ProjectItem>

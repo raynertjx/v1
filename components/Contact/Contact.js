@@ -3,13 +3,14 @@ import {
     ContactPara,
     ContactBtn,
     ContactSection,
-    ContactHeading,
 } from "./ContactStyles";
+import { Heading } from "../UI/Heading";
+
 
 const Contact = () => {
     return (
         <ContactSection id="contact">
-            <ContactHeading>Contact Me</ContactHeading>
+            <Heading>contact.</Heading>
             <ContactPara>
                 I'm always open to new opportunities, so my inbox is always
                 open. Furthermore, if you have a question or just want to say
