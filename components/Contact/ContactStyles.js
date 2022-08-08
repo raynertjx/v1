@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const ContactHeading = styled.h1`
-    padding: 1em 0;
-    font-family: ${({ theme }) => theme.fonts.mono};
-    color: ${({ theme }) => theme.colors.accentOrange};
-`
-
 export const ContactSection = styled.section`
     display: flex;
     flex-direction: column;
