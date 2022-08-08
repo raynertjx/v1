@@ -4,20 +4,22 @@ export const Container = styled.header`
     width: 100%;
     position: fixed;
     display: flex;
-    height: 60px;
-    top: ${(props) => (props.visible ? "0" : "-60px")};
+    height: 65px;
+    top: ${(props) => (props.visible ? "0" : "-65px")};
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem 1rem 5rem;
+    padding: 2.5em 5em;
     color: ${({ theme }) => theme.colors.fontColor};
+    font-weight: 500;
     font-family: ${({ theme }) => theme.fonts.mono};
+    font-size: 1.25rem;
 
     transition: top 0.6s;
 
     ul {
         list-style-type: none;
         display: flex;
-        gap: 3rem;
+        gap: 2.5em;
     }
 `;
 

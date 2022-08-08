@@ -19,20 +19,20 @@ const Header = () => {
 
     return (
         <Container visible={visible}>
-            <Link href="#hero">raynertjx</Link>
+            <Link href="#hero">raynertjx.</Link>
             <nav>
                 <ul>
                     <NavItem>
-                        <Link href="#about">About</Link>
+                        <Link href="#about">about.</Link>
                     </NavItem>
                     <NavItem>
-                        <Link href="#experience">Experience</Link>
+                        <Link href="#experience">experience.</Link>
                     </NavItem>
                     <NavItem>
-                        <Link href="#projects">Projects</Link>
+                        <Link href="#projects">projects.</Link>
                     </NavItem>
                     <NavItem>
-                        <Link href="#contact">Contact</Link>
+                        <Link href="#contact">contact.</Link>
                     </NavItem>
                 </ul>
             </nav>
