@@ -7,7 +7,7 @@ export const ProjectList = styled.ul`
     list-style-type: none;
 `;
 export const ProjectItem = styled.li`
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 1em;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
         background: #414141;
@@ -48,7 +48,7 @@ export const ProjectContent = styled.div`
             box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
             background: #414141;
             border-radius: 5px;
-            padding: 1.25em;
+            padding: 1.5em;
         }
 
         ul,
