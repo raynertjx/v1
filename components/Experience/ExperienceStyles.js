@@ -2,18 +2,25 @@ import styled, { keyframes, css } from "styled-components";
 
 export const ExperienceSection = styled.section`
     max-width: 900px;
-`
+`;
 
 export const Tabs = styled.div`
     display: flex;
     padding: 1em 0;
     gap: 2rem;
     height: 20vh;
+    flex-direction: column;
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
 `;
 
 export const TabList = styled.ul`
     display: flex;
-    flex-direction: column;
+
+    @media (min-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const TabItem = styled.li`
@@ -26,7 +33,6 @@ export const TabItem = styled.li`
     padding: 1rem 2rem;
     color: ${(props) => (props.active ? props.theme.colors.accentOrange : "")};
     position: relative;
-
     transition: 300ms ease-in-out;
 
     &:hover {
@@ -38,14 +44,20 @@ export const TabItem = styled.li`
         content: "";
         position: absolute;
         left: 0;
-        top: 0;
-        height: 100%;
-        width: 2px;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
         background: ${(props) =>
             props.active
                 ? props.theme.colors.accentOrange
                 : props.theme.colors.darkgrey};
         transition: 300ms ease-in-out;
+
+        @media (min-width: 600px) {
+            top: 0;
+            height: 100%;
+            width: 2px;
+        }
     }
 `;
 
@@ -68,12 +80,13 @@ export const TabContent = styled.div`
             ${fadein} 400ms ease-in-out
         `};
     h3 {
-        color: ${(props) => props.theme.colors.white}
+        font-size: 1.25rem;
+        color: ${(props) => props.theme.colors.white};
     }
     h3 > span {
         color: ${(props) => props.theme.colors.accentOrange};
     }
-    h5 {
+    h4 {
         font-family: ${(props) => props.theme.fonts.mono};
     }
     ul {
