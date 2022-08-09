@@ -6,12 +6,13 @@ export const ContactSection = styled.section`
     align-items: center;
     justify-content: center;
     max-width: 600px;
+    color: ${({ theme }) => theme.colors.white};
 `;
 
 export const ContactPara = styled.p`
     text-align: center;
     max-width: 45ch;
-    padding-bottom: 2rem;
+    padding-bottom: 3em;
 `;
 
 export const ContactBtn = styled.a`
@@ -19,7 +20,7 @@ export const ContactBtn = styled.a`
     color: ${(props) => props.theme.colors.accentOrange};
     cursor: pointer;
     background: transparent;
-    padding: 1em;
+    padding: 0.75em 2em;
     border-radius: 5px;
     border: 1px solid ${(props) => props.theme.colors.accentOrange};
     transition: 300ms ease-in-out;
