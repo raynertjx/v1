@@ -1,5 +1,5 @@
 import { HeroDesc1 } from "../../lib/constants";
-import { HeroSection, IntroHeader, NameHeader, Intro } from "./HeroStyles";
+import { HeroSection, IntroHeader, NameHeader, Intro, MoreBtn } from "./HeroStyles";
 
 const Hero = () => {
     return (
@@ -11,6 +11,7 @@ const Hero = () => {
             <Intro>
                 <p>{HeroDesc1}</p>
             </Intro>
+            <MoreBtn href="#about">Find Out More</MoreBtn>
         </HeroSection>
     );
 };
