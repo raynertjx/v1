@@ -1,20 +1,19 @@
 import styled from "styled-components";
 
 export const ProjectSection = styled.section`
-    max-width: 1000px;    
+    max-width: 1200px;
 `;
 export const ProjectList = styled.ul`
     list-style-type: none;
 `;
 export const ProjectItem = styled.li`
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         padding: 1em;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
         background: #414141;
         border-radius: 5px;
     }
-
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         align-items: center;
@@ -40,7 +39,7 @@ export const ProjectContent = styled.div`
         color: ${(props) => props.theme.colors.white};
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         text-align: right;
         p {
             z-index: 2;
