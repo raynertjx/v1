@@ -19,7 +19,9 @@ const Header = () => {
 
     return (
         <Container visible={visible}>
-            <Link href="#hero">raynertjx.</Link>
+            <div>
+                <Link href="#hero">raynertjx.</Link>
+            </div>
             <nav>
                 <ul>
                     <NavItem>

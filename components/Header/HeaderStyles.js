@@ -8,18 +8,30 @@ export const Container = styled.header`
     top: ${(props) => (props.visible ? "0" : "-65px")};
     justify-content: space-between;
     align-items: center;
-    padding: 2.5em 5em;
     color: ${({ theme }) => theme.colors.fontColor};
     font-weight: 500;
     font-family: ${({ theme }) => theme.fonts.mono};
     font-size: 1.25rem;
-
     transition: top 0.6s;
+    padding: 0 4vw;
+
+    div {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
 
     ul {
         list-style-type: none;
         display: flex;
         gap: 2.5em;
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+            position: fixed;
+            inset: 0 0 0 35%;
+            background: steelblue;
+            flex-direction: column;
+            padding: min(30vh, 10rem) 3em;
+        }
     }
 `;
 
