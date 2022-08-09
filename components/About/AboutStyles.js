@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const AboutSection = styled.section`
     max-width: 1000px;
-`
+    color: ${({ theme }) => theme.colors.white};
+`;
 
 export const Info = styled.div`
     p {
-        color: ${({ theme }) => theme.colors.lightgrey};
         font-size: 1.25rem;
         padding-bottom: 2em;
         max-width: 70ch;
@@ -27,4 +27,3 @@ export const List = styled.ul`
         gap: 1rem;
     }
 `;
-
