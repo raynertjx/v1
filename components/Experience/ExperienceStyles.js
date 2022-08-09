@@ -70,7 +70,6 @@ const fadein = keyframes`
     }`;
 
 export const TabContent = styled.div`
-    /* max-width: 60ch; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -86,8 +85,8 @@ export const TabContent = styled.div`
     h3 > span {
         color: ${(props) => props.theme.colors.accentOrange};
     }
-    h4 {
-        font-family: ${(props) => props.theme.fonts.mono};
+    h4, li {
+        color: ${(props) => props.theme.colors.lightgrey};
     }
     ul {
         padding: 0;
