@@ -28,16 +28,16 @@ const Header = (props) => {
             </HamburgerDiv>
             <nav>
                 <ul>
-                    <NavItem>
+                    <NavItem onClick={() => props.setExpandNav(false)}>
                         <Link href="#about">about.</Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={() => props.setExpandNav(false)}>
                         <Link href="#experience">experience.</Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={() => props.setExpandNav(false)}>
                         <Link href="#projects">projects.</Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem onClick={() => props.setExpandNav(false)}>
                         <Link href="#contact">contact.</Link>
                     </NavItem>
                 </ul>

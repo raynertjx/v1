@@ -39,8 +39,8 @@ export const Container = styled.header`
             padding: min(30vh, 10rem) 3em;
             z-index: 100;
             transition: inset 0.2s ease-in-out;
-            -webkit-box-shadow: -7px 0px 25px 0px rgba(0,0,0,0.35); 
-box-shadow: -7px 0px 25px 0px rgba(0,0,0,0.35);
+            -webkit-box-shadow: -7px 0px 25px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: -7px 0px 25px 0px rgba(0, 0, 0, 0.35);
         }
     }
 `;
@@ -50,27 +50,29 @@ export const NavItem = styled.li`
     position: relative;
     transition: color 175ms linear;
 
-    &:hover {
+    &:hover, &:active {
         color: ${({ theme }) => theme.colors.accentOrange};
     }
 
-    &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 2px;
-        background-color: ${({ theme }) => theme.colors.accentOrange};
+    @media (min-width: 769px) {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: ${({ theme }) => theme.colors.accentOrange};
 
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 175ms ease-in;
-    }
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 175ms ease-in;
+        }
 
-    &:hover:after {
-        transform-origin: left;
-        transform: scaleX(1);
+        &:hover:after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
     }
 `;
 
