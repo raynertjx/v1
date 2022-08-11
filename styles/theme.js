@@ -19,6 +19,8 @@ html {
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;  
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
     padding: 0;
     margin: 0;
     /* font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
