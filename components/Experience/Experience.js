@@ -3,7 +3,7 @@ import { IconContext } from "react-icons/lib";
 import { Heading } from "../UI/Heading";
 import { ExperienceSection } from "./ExperienceStyles";
 import { TabList, TabItem, TabContent, Tabs } from "./ExperienceStyles";
-import { Jobs } from "../../lib/constants";
+import { Jobs } from "./ExperienceConstants";
 import { TbCaretRight } from "react-icons/tb";
 import { darkTheme } from "../../styles/theme";
 
@@ -33,11 +33,16 @@ const Experience = () => {
                 <TabContent
                     fade={fadeIn}
                     onAnimationEnd={() => setFadeIn(false)}
-                    icon={<TbCaretRight/>}
+                    icon={<TbCaretRight />}
                 >
-                    <h3>{Jobs[selectedBtnId].role} <span>@ {Jobs[selectedBtnId].place}</span></h3>
+                    <h3>
+                        {Jobs[selectedBtnId].role}{" "}
+                        <span>@ {Jobs[selectedBtnId].place}</span>
+                    </h3>
                     <h4>{Jobs[selectedBtnId].date}</h4>
-                    <IconContext.Provider value={{color: darkTheme.colors.accentOrange}}>
+                    <IconContext.Provider
+                        value={{ color: darkTheme.colors.accentOrange }}
+                    >
                         <ul>
                             {Jobs[selectedBtnId].content.map((item) => (
                                 <li>{item}</li>
