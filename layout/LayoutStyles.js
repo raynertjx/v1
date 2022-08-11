@@ -6,7 +6,7 @@ export const Blur = styled.div`
             return `
                 position: relative;
                 z-index: -1;
-                filter: blur(10px);
+                filter: blur(5px);
             `;
     }}
     transition: filter 0.2s ease-in-out;
@@ -20,8 +20,4 @@ export const Container = styled.main`
     @media (max-width: 1135px) {
         padding: 0 4vw;
     }
-
-    /* @media (min-width: 768px) {
-        padding: 0 4vw;
-    } */
 `;
