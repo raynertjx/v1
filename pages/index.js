@@ -8,11 +8,15 @@ import Experience from "../components/Experience/Experience";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = isNavExpanded ? "hidden" : "auto";
+    }, [isNavExpanded])
 
     return (
         <>
