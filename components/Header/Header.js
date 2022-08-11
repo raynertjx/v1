@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Container, NavItem } from "./HeaderStyles";
+import React, { useEffect, useState, useContext } from "react";
+import { Container, NavItem, HamburgerDiv } from "./HeaderStyles";
 import Link from "next/link";
+import { NavContext } from "../../pages/index";
 
-const Header = () => {
+const Header = (props) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
@@ -18,10 +19,13 @@ const Header = () => {
     }, [prevScrollPos, visible, handleScroll]);
 
     return (
-        <Container visible={visible}>
+        <Container visible={visible} expandNav={props.expandNav}>
             <div>
                 <Link href="#hero">raynertjx.</Link>
             </div>
+            <HamburgerDiv expandNav={props.expandNav}>
+                <div onClick={() => props.setExpandNav(!props.expandNav)}></div>
+            </HamburgerDiv>
             <nav>
                 <ul>
                     <NavItem>
