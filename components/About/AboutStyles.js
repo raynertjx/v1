@@ -19,7 +19,6 @@ export const List = styled.ul`
     grid-template-columns: repeat(2, minmax(100px, 200px));
     gap: 0.5rem 1rem;
     font-size: 1.1rem;
-    font-family: ${({ theme }) => theme.fonts.mono};
 
     li {
         display: flex;

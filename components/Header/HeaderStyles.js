@@ -13,7 +13,6 @@ export const Container = styled.header`
     backdrop-filter: blur(15px);
     color: ${({ theme }) => theme.colors.fontColor};
     font-weight: 500;
-    font-family: ${({ theme }) => theme.fonts.mono};
     font-size: 1.25rem;
     transition: top 0.3s ease-in-out;
     padding: 2.5em 4vw;

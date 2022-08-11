@@ -29,7 +29,6 @@ export const TabItem = styled.li`
     cursor: pointer;
     font-size: 0.8rem;
     list-style-type: none;
-    font-family: ${(props) => props.theme.fonts.mono};
     padding: 1rem 2rem;
     color: ${(props) => (props.active ? props.theme.colors.accentOrange : "")};
     position: relative;

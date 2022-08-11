@@ -7,5 +7,4 @@ export const FooterDiv = styled.footer`
     padding-bottom: 1.5rem;
     font-size: 0.8rem;
     color: ${(props) => props.theme.colors.accentOrange};
-    font-family: ${(props) => props.theme.fonts.mono};
 `;

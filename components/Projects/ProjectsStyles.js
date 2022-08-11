@@ -59,7 +59,6 @@ export const ProjectContent = styled.div`
         list-style-type: none;
         display: flex;
         color: ${(props) => props.theme.colors.accentOrange};
-        font-family: ${(props) => props.theme.fonts.mono};
         font-size: 0.75rem;
         gap: 1em;
     }

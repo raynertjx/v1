@@ -16,7 +16,6 @@ export const ContactPara = styled.p`
 `;
 
 export const ContactBtn = styled.a`
-    font-family: ${(props) => props.theme.fonts.mono};
     color: ${(props) => props.theme.colors.accentOrange};
     cursor: pointer;
     background: transparent;
