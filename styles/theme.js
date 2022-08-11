@@ -19,7 +19,7 @@ html {
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;  
-    overscroll-behavior: contain 
+    overscroll-behavior: contain;
     -webkit-tap-highlight-color: transparent;
     padding: 0;
     margin: 0;
