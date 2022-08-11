@@ -19,12 +19,10 @@ html {
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;  
-    overscroll-behavior: none;
+    overscroll-behavior: contain 
     -webkit-tap-highlight-color: transparent;
     padding: 0;
     margin: 0;
-    /* font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background-color: ${({ theme }) => theme.colors.background};
