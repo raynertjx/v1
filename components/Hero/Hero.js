@@ -1,4 +1,4 @@
-import { HeroDesc1 } from "../../lib/constants";
+import { HeroDesc1 } from "./HeroConstants";
 import { HeroSection, IntroHeader, NameHeader, Intro, MoreBtn } from "./HeroStyles";
 
 const Hero = () => {
