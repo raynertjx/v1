@@ -40,7 +40,7 @@ export const MoreBtn = styled.a`
     padding: 0.75em 2em;
     border-radius: 5px;
     border: 1px solid ${(props) => props.theme.colors.accentOrange};
-    transition: 300ms ease-in-out;
+    transition: 0.3s ease-in-out;
     :hover, :focus {
         box-shadow: inset 0 0 100px 200px rgba(255, 140, 0, 0.1);
     }

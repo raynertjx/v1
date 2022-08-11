@@ -71,7 +71,7 @@ export const ProjectContent = styled.div`
         width: 20px;
         height: 20px;
         cursor: pointer;
-        transition: 300ms ease-out;
+        transition: 0.3s ease-out;
         :hover {
             color: ${(props) => props.theme.colors.accentOrange};
         }
