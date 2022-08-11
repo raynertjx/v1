@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "./LayoutStyles";
+import { Container, Blur } from "./LayoutStyles";
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
     return (
-        <Container>
-            {children}
-        </Container>
+        <Blur expandNav={props.expandNav}>
+            <Container>{props.children}</Container>
+        </Blur>
     );
 };
 
