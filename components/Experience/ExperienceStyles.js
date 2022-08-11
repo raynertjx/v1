@@ -98,7 +98,6 @@ export const TabContent = styled.div`
         padding: 0.5rem 0rem;
         &:before {
             content: "▹";
-            position: relative;
             bottom: 1px;
             color: ${(props) => props.theme.colors.accentOrange};
         }
