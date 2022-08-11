@@ -6,5 +6,10 @@ export const FooterDiv = styled.footer`
     justify-content: center;
     padding-bottom: 1.5rem;
     font-size: 0.8rem;
-    color: ${(props) => props.theme.colors.accentOrange};
+    a {
+        &:hover {
+            transition: color 0.3s ease-in-out; 
+            color: ${(props) => props.theme.colors.accentOrange};
+        }
+    }
 `;
