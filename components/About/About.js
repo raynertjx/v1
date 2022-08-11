@@ -3,7 +3,7 @@ import { IconContext } from "react-icons/lib";
 import { Info, List } from "./AboutStyles";
 import { Heading } from "../UI/Heading";
 import { AboutSection } from "./AboutStyles";
-import { AboutParagraphs, AboutSkills } from "../../lib/constants";
+import { AboutParagraphs, AboutSkills } from "./AboutConstants";
 import { TbCaretRight } from "react-icons/tb";
 import { darkTheme } from "../../styles/theme";
 
