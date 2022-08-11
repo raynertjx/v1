@@ -22,7 +22,6 @@ export const ProjectItem = styled.li`
 
 export const ProjectImage = styled.div`
     grid-area: 1 / 1 / -1 / 8;
-    z-index: 1;
     span {
         border-radius: 5px;
     }
