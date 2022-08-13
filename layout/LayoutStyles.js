@@ -14,7 +14,7 @@ export const Blur = styled.div`
 
 export const Container = styled.main`
     width: 100%;
-    max-width: 65em;
+    max-width: 60em;
     margin: 0px auto;
 
     @media (max-width: 1135px) {
