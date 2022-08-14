@@ -49,7 +49,8 @@ export const NavItem = styled.li`
     position: relative;
     transition: color 175ms linear;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
         color: ${({ theme }) => theme.colors.accentOrange};
     }
 
@@ -75,6 +76,52 @@ export const NavItem = styled.li`
     }
 `;
 
+export const HamburgerIcon = styled.div`
+    width: 2.5rem;
+    height: 2px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    background: ${({ theme }) => theme.colors.accentOrange};
+    ${(props) => {
+        if (props.expandNav)
+            return `
+                        background: transparent;
+                        box-shadow: none;
+                    `;
+    }}
+
+    &:before,
+            &:after {
+        content: "";
+        position: absolute;
+        width: 2.5rem;
+        height: 2px;
+        border-radius: 3px;
+        background: ${({ theme }) => theme.colors.accentOrange};
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:before {
+        transform: translateY(-9px);
+        ${(props) => {
+            if (props.expandNav)
+                return `
+                        transform: rotate(45deg) translate(2px, -2px);
+                    `;
+        }}
+    }
+
+    &:after {
+        transform: translateY(9px);
+        ${(props) => {
+            if (props.expandNav)
+                return `
+                        transform: rotate(-45deg) translate(2px, 2px);
+                    `;
+        }}
+    }
+`;
+
 export const HamburgerDiv = styled.div`
     display: none;
     @media (max-width: 768px) {
@@ -89,51 +136,5 @@ export const HamburgerDiv = styled.div`
         right: 2rem;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-
-        div {
-            width: 2.5rem;
-            height: 2px;
-            border-radius: 3px;
-            transition: all 0.3s ease-in-out;
-            background: ${({ theme }) => theme.colors.accentOrange};
-            ${(props) => {
-                if (props.expandNav)
-                    return `
-                        background: transparent;
-                        box-shadow: none;
-                    `;
-            }}
-
-            &:before,
-            &:after {
-                content: "";
-                position: absolute;
-                width: 2.5rem;
-                height: 2px;
-                border-radius: 3px;
-                background: ${({ theme }) => theme.colors.accentOrange};
-                transition: all 0.2s ease-in-out;
-            }
-
-            &:before {
-                transform: translateY(-9px);
-                ${(props) => {
-                    if (props.expandNav)
-                        return `
-                        transform: rotate(45deg) translate(2px, -2px);
-                    `;
-                }}
-            }
-
-            &:after {
-                transform: translateY(9px);
-                ${(props) => {
-                    if (props.expandNav)
-                        return `
-                        transform: rotate(-45deg) translate(2px, 2px);
-                    `;
-                }}
-            }
-        }
     }
 `;

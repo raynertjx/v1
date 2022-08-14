@@ -1,7 +1,8 @@
-import React, { useEffect, useState, useContext } from "react";
-import { Container, NavItem, HamburgerDiv } from "./HeaderStyles";
+import React, { useEffect, useState } from "react";
+import { Container, NavItem, HamburgerDiv, HamburgerIcon } from "./HeaderStyles";
 import Link from "next/link";
-import { NavContext } from "../../pages/index";
+import Reveal from "react-awesome-reveal";
+import { fadeDown, fadeUp } from "../../styles/animations";
 
 const Header = (props) => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -20,26 +21,39 @@ const Header = (props) => {
 
     return (
         <Container visible={visible} expandNav={props.expandNav}>
-            <div>
-                <Link href="#hero">raynertjx.</Link>
-            </div>
-            <HamburgerDiv expandNav={props.expandNav}>
-                <div onClick={() => props.setExpandNav(!props.expandNav)}></div>
+            <Reveal keyframes={fadeDown} duration={500} triggerOnce>
+                <div>
+                    <Link href="#hero">raynertjx.</Link>
+                </div>
+            </Reveal>
+            <HamburgerDiv>
+                <Reveal keyframes={fadeDown} duration={500} delay={250} triggerOnce>
+                    <HamburgerIcon expandNav={props.expandNav} onClick={() => props.setExpandNav(!props.expandNav)}></HamburgerIcon>
+                </Reveal>
             </HamburgerDiv>
             <nav>
                 <ul>
-                    <NavItem onClick={() => props.setExpandNav(false)}>
-                        <Link href="#about">about.</Link>
-                    </NavItem>
-                    <NavItem onClick={() => props.setExpandNav(false)}>
-                        <Link href="#experience">experience.</Link>
-                    </NavItem>
-                    <NavItem onClick={() => props.setExpandNav(false)}>
-                        <Link href="#projects">projects.</Link>
-                    </NavItem>
-                    <NavItem onClick={() => props.setExpandNav(false)}>
-                        <Link href="#contact">contact.</Link>
-                    </NavItem>
+                    <Reveal
+                        keyframes={fadeDown}
+                        duration={500}
+                        delay={200}
+                        damping={0.3}
+                        triggerOnce
+                        cascade
+                    >
+                        <NavItem onClick={() => props.setExpandNav(false)}>
+                            <Link href="#about">about.</Link>
+                        </NavItem>
+                        <NavItem onClick={() => props.setExpandNav(false)}>
+                            <Link href="#experience">experience.</Link>
+                        </NavItem>
+                        <NavItem onClick={() => props.setExpandNav(false)}>
+                            <Link href="#projects">projects.</Link>
+                        </NavItem>
+                        <NavItem onClick={() => props.setExpandNav(false)}>
+                            <Link href="#contact">contact.</Link>
+                        </NavItem>
+                    </Reveal>
                 </ul>
             </nav>
         </Container>
