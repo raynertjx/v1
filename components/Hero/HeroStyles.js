@@ -28,7 +28,7 @@ export const Intro = styled.div`
     color: #b2b2b2;
     p {
         font-size: clamp(1.5rem, 4vw, 1.75rem);
-        padding-bottom: 1em;
+        padding-bottom: 1.5em;
     }
 `;
 
