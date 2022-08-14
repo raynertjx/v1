@@ -10,9 +10,9 @@ const Contact = () => {
             <Reveal keyframes={fadeUp} fraction={0.5} triggerOnce>
                 <Heading>contact.</Heading>
                 <ContactPara>
-                    I'm always open to new opportunities, so my inbox is always
+                    I&apos;m always open to new opportunities, so my inbox is always
                     open. Furthermore, if you have a question or just want to
-                    say hello, I'll do my best to get back to you!
+                    say hello, I&apos;ll do my best to get back to you!
                 </ContactPara>
                 <ContactBtn href="mailto:rayner742@gmail.com" target="_blank">
                     Say Hello
