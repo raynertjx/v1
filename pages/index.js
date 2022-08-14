@@ -19,6 +19,10 @@ export default function Home() {
 
     return (
         <>
+        <Head>
+            <title>Rayner Toh</title>
+            <meta name='description' content='Hi, my name is Rayner! I&apos;m a Year 1 Computer Science undergraduate at the National University of Singapore.' />
+        </Head>
             <Header expandNav={isNavExpanded} setExpandNav={setIsNavExpanded}/>
             <Layout expandNav={isNavExpanded}>
                 <Hero />
