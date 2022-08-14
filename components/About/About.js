@@ -16,18 +16,18 @@ const About = () => {
             <Reveal keyframes={fadeUp} fraction={0.5} triggerOnce>
                 <Heading>about me.</Heading>
                 <Info>
-                    {AboutParagraphs.map((para) => (
-                        <p key={para.id}>{para.text}</p>
+                    {AboutParagraphs.map((para, i) => (
+                        <p key={i}>{para}</p>
                     ))}
                 </Info>
                 <List>
                     <IconContext.Provider
                         value={{ color: darkTheme.colors.accentOrange }}
                     >
-                        {AboutSkills.map((skill) => (
-                            <li key={skill.id}>
+                        {AboutSkills.map((skill, i) => (
+                            <li key={i}>
                                 <TbCaretRight />
-                                {skill.title}
+                                {skill}
                             </li>
                         ))}
                     </IconContext.Provider>
