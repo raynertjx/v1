@@ -16,8 +16,12 @@ export const Container = styled.main`
     width: 100%;
     max-width: 60em;
     margin: 0px auto;
+    padding: 0 4vw;
 
-    @media (max-width: 1135px) {
-        padding: 0 4vw;
+    @media (min-width: 769px) {
+        padding: 0 8vw;
+    }
+    @media (min-width: 1024px) {
+        padding: 0;
     }
 `;
