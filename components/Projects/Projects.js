@@ -22,7 +22,7 @@ const Projects = () => {
                     {projects.map((proj, i) => (
                         <ProjectItem key={i}>
                             <ProjectImage>
-                                <Image src={proj.img} />
+                                <Image src={proj.img} alt="Help A Neighbour Out Image" />
                             </ProjectImage>
                             <ProjectContent img={proj.img}>
                                 <h2>{proj.title}</h2>
@@ -33,10 +33,10 @@ const Projects = () => {
                                     ))}
                                 </ul>
                                 <div>
-                                    <a href={proj.github_link} target="_blank">
+                                    <a href={proj.github_link} target="_blank" rel="noreferrer">
                                         <FiGithub />
                                     </a>
-                                    <a href={proj.deployment_link} target="_blank">
+                                    <a href={proj.deployment_link} target="_blank" rel="noreferrer">
                                         <FiExternalLink />
                                     </a>
                                 </div>

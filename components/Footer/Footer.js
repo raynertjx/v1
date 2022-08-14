@@ -5,15 +5,15 @@ const Footer = () => {
     return (
         <FooterContainer>
             <SocialsDiv>
-                <a href="https://github.com/raynertjx" target="_blank">
+                <a href="https://github.com/raynertjx" target="_blank" rel="noreferrer">
                     <FiGithub />
                 </a>
-                <a href="https://twitter.com/raynertjx" target="_blank">
+                <a href="https://twitter.com/raynertjx" target="_blank" rel="noreferrer">
                     <FiTwitter />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/rayner-toh-90a3b11b4/"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                 >
                     <FiLinkedin />
                 </a>
