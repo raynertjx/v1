@@ -12,7 +12,7 @@ const Header = (props) => {
         const currentScrollPos = window.pageYOffset;
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 25);
         setPrevScrollPos(currentScrollPos);
-    });
+    }, [prevScrollPos]);
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
