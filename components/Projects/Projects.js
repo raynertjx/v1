@@ -19,8 +19,8 @@ const Projects = () => {
             <Reveal keyframes={fadeUp} fraction={0.5} triggerOnce>
                 <Heading>projects.</Heading>
                 <ProjectList>
-                    {projects.map((proj) => (
-                        <ProjectItem>
+                    {projects.map((proj, i) => (
+                        <ProjectItem key={i}>
                             <ProjectImage>
                                 <Image src={proj.img} />
                             </ProjectImage>
@@ -28,8 +28,8 @@ const Projects = () => {
                                 <h2>{proj.title}</h2>
                                 <p>{proj.desc}</p>
                                 <ul>
-                                    {proj.skills.map((item) => (
-                                        <li>{item}</li>
+                                    {proj.skills.map((item, i) => (
+                                        <li key={i}>{item}</li>
                                     ))}
                                 </ul>
                                 <div>

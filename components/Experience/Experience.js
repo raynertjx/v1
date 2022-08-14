@@ -47,8 +47,8 @@ const Experience = () => {
                             value={{ color: darkTheme.colors.accentOrange }}
                         >
                             <ul>
-                                {Jobs[selectedBtnId].content.map((item) => (
-                                    <li>{item}</li>
+                                {Jobs[selectedBtnId].content.map((item, i) => (
+                                    <li key={i}>{item}</li>
                                 ))}
                             </ul>
                         </IconContext.Provider>
