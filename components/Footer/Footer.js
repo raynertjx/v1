@@ -19,7 +19,7 @@ const Footer = () => {
                 </a>
             </SocialsDiv>
             <FooterDiv>
-                <a href="https://github.com/raynertjx/portfolio" target="_blank">
+                <a href="https://github.com/raynertjx/portfolio" target="_blank" rel="noreferrer">
                     Designed & Built by Rayner Toh
                 </a>
             </FooterDiv>
