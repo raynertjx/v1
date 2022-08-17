@@ -23,7 +23,7 @@ const Header = (props) => {
         <Container visible={visible} expandNav={props.expandNav}>
             <Reveal keyframes={fadeDown} duration={500} triggerOnce>
                 <div>
-                    <Link href="#hero">raynertjx.</Link>
+                    <Link href="#hero">raynertoh.</Link>
                 </div>
             </Reveal>
             <HamburgerDiv>
